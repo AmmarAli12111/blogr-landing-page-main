@@ -11,6 +11,9 @@ body {
   position: relative;
   z-index: -3;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -46,7 +49,7 @@ body {
   cursor: pointer;
 }
 .header .icon.change {
-  content: url(../blogr-landing-page-main/images/icon-close.svg);
+  content: url(../images/icon-close.svg);
 }
 @media (max-width: 991px) {
   .header .icon {
@@ -98,7 +101,6 @@ body {
 }
 .header .nav .links > li {
   cursor: pointer;
-  position: relative;
 }
 @media (max-width: 991px) {
   .header .nav .links > li {
@@ -131,6 +133,18 @@ body {
     box-shadow: 0px 21px 20px 20px hsl(207deg 13% 34% / 12%);
     left: -26px;
     top: 20px;
+  }
+  .header .nav .links .li1 .another-links {
+    left: 135px;
+    top: 62px;
+  }
+  .header .nav .links .li2 .another-links {
+    left: 300px;
+    top: 62px;
+  }
+  .header .nav .links .li3 .another-links {
+    left: 430px;
+    top: 62px;
   }
 }
 @media (max-width: 991px) {
@@ -177,11 +191,6 @@ body {
 @media (min-width: 768px) {
   .header .nav .links > li .another-links li a:hover {
     color: hsl(240, 10%, 16%);
-  }
-}
-@media (min-width: 992px) {
-  .header .nav .links > li:nth-child(2) .another-links {
-    left: -5px;
   }
 }
 .header .nav .links .arrow {
@@ -344,12 +353,10 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-@media (min-width: 992px) {
-  .landing .btns a:first-of-type:hover {
-    background-color: hsl(0deg 0% 100% / 35%);
-    color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(0deg 0% 100% / 35%);
-  }
+.landing .btns a:first-of-type:hover {
+  background-color: hsl(0deg 0% 100% / 35%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0deg 0% 100% / 35%);
 }
 .landing .btns a:last-of-type {
   font-family: "Overpass", sans-serif;
@@ -366,11 +373,9 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-@media (min-width: 992px) {
-  .landing .btns a:last-of-type:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(355, 100%, 74%);
-  }
+.landing .btns a:last-of-type:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(355, 100%, 74%);
 }
 .Introducation {
   padding-top: 100px;
@@ -394,6 +399,7 @@ body {
 .Introducation > h1 {
   text-align: center;
   color: hsl(237, 23%, 32%);
+  font-size: 35px;
 }
 .Introducation h2 {
   color: hsl(237, 23%, 32%);
@@ -448,7 +454,7 @@ body {
   align-items: center;
   position: relative;
   padding: 30px 120px;
-  background-image: url(../blogr-landing-page-main/images/bg-pattern-circles.svg);
+  background-image: url(../images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top 80% right 450px;
